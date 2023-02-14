@@ -20,9 +20,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Microverse-Portfolio-Project] <a name="Awesome Books"></a>
+# 📖 [Project Name] <a name="Awesome Books"></a>
 
-**[Musical-Concert-Capstone]** is a website that basically allows users to add books using a form and the book added is displayed in the list of books. The user can also delete the added book.
+**[Project_Description]** is a website that basically allows users to add books using a form and the book added is displayed in the list of books. The user can also delete the added book.
 
 ## 🛠 Built With <a name="html, css and JavaScript"></a>
 
