@@ -1,70 +1,72 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
+
 main {
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
 
 hr {
   width: 80%;
   margin-left: 0;
 }
-.big-lists-container{
-  border: 2px solid black;
-  margin-bottom:2rem;
-  padding-bottom:12px;
-  padding-right: 12px;
 
+.big-lists-container {
+  border: 2px solid black;
+  margin-bottom: 2rem;
+  padding-bottom: 12px;
+  padding-right: 12px;
   width: 50%;
 }
-.book-lists{
+
+.book-lists {
   display: flex;
-  margin-top:5px;
+  margin-top: 5px;
   font-size: 20px;
   width: 100%;
   justify-content: space-between;
-
-  
 }
-.book-lists:nth-child(even){
+
+.book-lists:nth-child(even) {
   background-color: gray;
 }
 
-.book-lists div{
-  width:70%;
+.book-lists div {
+  width: 70%;
   display: flex;
-  gap:10px;
-  font-weight:bold;
+  gap: 10px;
+  font-weight: bold;
   align-items: center;
- 
 }
-.book-lists button{
-  background-color:white;
-  padding:0 15;
-  box-shadow:4px 4px 4px black;
 
- 
+form button {
+  padding: 0 15px;
+  float: right;
+  background-color: white;
+  font-weight: bold;
 }
-.border{
-  width:10%;
+
+.book-lists button {
+  background-color: white;
+  padding: 0 15px;
+  box-shadow: 4px 4px 4px black;
+}
+
+.border {
+  width: 10%;
   border-bottom: 3px solid gray;
   margin-bottom: 3%;
-  box-shadow:3px 3px 5px black;
+  box-shadow: 3px 3px 5px black;
 }
-form button{
-  padding:0 15;
-  float: right;
-  background-color:white;
-  font-weight:bold;
-}
-.form h2{
 
-margin-bottom:12px;
+.form h2 {
+  margin-bottom: 12px;
 }
-input::placeholder{
+
+input::placeholder {
   font-weight: bold;
 }
