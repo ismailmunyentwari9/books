@@ -74,14 +74,16 @@ const date = document.querySelector('.date');
 
 listLink.addEventListener('click', () => {
   bookList.classList.remove('hide');
-  addBook.classList.add('hide');
   contact.classList.add('hide');
+  addBook.classList.add('hide');
+ 
 });
 
 addNewLink.addEventListener('click', () => {
   addBook.classList.remove('hide');
-  bookList.classList.add('hide');
   contact.classList.add('hide');
+  bookList.classList.add('hide');
+ 
 });
 
 contactLink.addEventListener('click', () => {
