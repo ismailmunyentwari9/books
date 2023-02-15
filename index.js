@@ -2,7 +2,6 @@ const formButton = document.querySelector('form');
 const container = document.querySelector('.big-lists-container');
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
-const time = document.querySelector('.timer');
 
 class AwesomeLibrary {
   static cleanInputs() {
@@ -64,7 +63,3 @@ formButton.addEventListener('submit', (e) => {
   AwesomeLibrary.addBook(title.value, author.value);
   AwesomeLibrary.cleanInputs();
 });
-
-const date= new Date();
-const formattedDat= `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-time.innerHTML=formattedDat;

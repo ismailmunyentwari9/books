@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family:cursive;
+  font-family: cursive;
 }
 
 main {
@@ -70,36 +70,4 @@ form button {
 
 input::placeholder {
   font-weight: bold;
-}
-
-/*Navigation styles*/
-
-header{
-  border:2px solid black;
-  width:85%;
-  margin:2% 5%;
-  padding:8px;
-}
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-}
-nav span{
-  margin-left:2%;
-  font-weight:600;
-  font-size: 25px;
-}
-ul{
-  display: flex;
-  align-items:center;
-}
-li{
-  list-style-type: none;
-  font-size:20px;
-  margin-right:17px;
-}
-a{
-  text-decoration: none;
-  color:black;
 }
