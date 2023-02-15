@@ -76,14 +76,12 @@ listLink.addEventListener('click', () => {
   bookList.classList.remove('hide');
   contact.classList.add('hide');
   addBook.classList.add('hide');
- 
 });
 
 addNewLink.addEventListener('click', () => {
   addBook.classList.remove('hide');
   contact.classList.add('hide');
   bookList.classList.add('hide');
- 
 });
 
 contactLink.addEventListener('click', () => {
