@@ -1,6 +1,61 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: cursive;
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+}
+
+/* ------------------------The Navigation Bar -------------------------------- */
+header {
+  padding: 1% 10%;
+  color: #000;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 1%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.borderRight {
+  border-right: 2px solid gray;
+}
+
+nav ul li a:hover {
+  color: #a8a4a4;
+}
+
+nav ul li a:active {
+  color: blue;
+}
+
+.date {
+  text-align: end;
+  padding-right: 10%;
 }
 
 main {
@@ -10,63 +65,108 @@ main {
   align-items: center;
 }
 
+section h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
 hr {
   width: 80%;
   margin-left: 0;
 }
 
+.bookList {
+  text-align: center;
+  width: 80%;
+  padding: 1% 10%;
+}
+
 .big-lists-container {
   border: 2px solid black;
-  margin-bottom: 2rem;
-  padding-bottom: 12px;
-  padding-right: 12px;
-  width: 50%;
 }
 
 .book-lists {
   display: flex;
-  margin-top: 5px;
-  font-size: 20px;
-  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+.listText {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
 }
 
 .book-lists:nth-child(even) {
   background-color: gray;
 }
 
-.book-lists div {
-  width: 70%;
+.addBook {
+  width: 80%;
   display: flex;
-  gap: 10px;
-  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-form button {
-  padding: 0 15px;
-  float: right;
-  background-color: white;
-  font-weight: bold;
+.addBook form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
 }
 
-.book-lists button {
-  background-color: white;
-  padding: 0 15px;
-  box-shadow: 4px 4px 4px black;
+.addBook form input {
+  width: 80%;
+  padding: 1%;
 }
 
-.border {
-  width: 10%;
-  border-bottom: 3px solid gray;
-  margin-bottom: 3%;
-  box-shadow: 3px 3px 5px black;
+.lastInput {
+  margin-bottom: 30px;
 }
 
-.form h2 {
-  margin-bottom: 12px;
+.addBtn {
+  align-self: flex-end;
+  padding: 1% 3%;
+  margin-right: 10%;
 }
 
-input::placeholder {
-  font-weight: bold;
+.addBtn:hover {
+  color: #fff;
+  background-color: gray;
+}
+
+.contact {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.address-div {
+  padding: 0;
+}
+
+footer {
+  width: 80%;
+  border: 2px solid #000;
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+  margin-bottom: 10px;
+}
+
+footer h3 {
+  padding: 1%;
+}
+
+.hide {
+  display: none;
 }

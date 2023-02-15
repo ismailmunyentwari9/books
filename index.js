@@ -32,7 +32,7 @@ class AwesomeLibrary {
     const datas = uniqueBooks
       .map(
         (book) => `<div class="book-lists">
-                <div><p>"${book.title}"</p>by<p>${book.author}</p></div>
+                <div class="listText"><p>"${book.title}"</p>by<p>${book.author}</p></div>
                 <button class="clean" data-id=${book.id}>Remove</button>
               </div>`,
       )
@@ -63,3 +63,40 @@ formButton.addEventListener('submit', (e) => {
   AwesomeLibrary.addBook(title.value, author.value);
   AwesomeLibrary.cleanInputs();
 });
+
+const listLink = document.querySelector('.listLink');
+const addNewLink = document.querySelector('.addNewLink');
+const contactLink = document.querySelector('.contactLink');
+const bookList = document.querySelector('.bookList');
+const addBook = document.querySelector('.addBook');
+const contact = document.querySelector('.contact');
+const date = document.querySelector('.date');
+
+listLink.addEventListener('click', () => {
+  bookList.classList.remove('hide');
+  addBook.classList.add('hide');
+  contact.classList.add('hide');
+});
+
+addNewLink.addEventListener('click', () => {
+  addBook.classList.remove('hide');
+  bookList.classList.add('hide');
+  contact.classList.add('hide');
+});
+
+contactLink.addEventListener('click', () => {
+  contact.classList.remove('hide');
+  addBook.classList.add('hide');
+  bookList.classList.add('hide');
+});
+
+const currentDate = new Date();
+const datetime = currentDate.toLocaleDateString('en-US', {
+  dateStyle: 'long',
+});
+
+const time = currentDate.toLocaleTimeString('en-US', {
+  timeStyle: 'medium',
+});
+
+date.innerHTML = `${datetime}, ${time}`;
