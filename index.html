@@ -7,30 +7,54 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <h3 class="logo">Awesome Books</h3>
+        <ul class="nav-links">
+          <li class="borderRight"><a class="listLink" href="#">List</a></li>
+          <li class="borderRight">
+            <a class="addNewLink" href="#">Add New</a>
+          </li>
+          <li><a class="contactLink" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p class="date"></p>
     <main>
-      <h1>All awesome books</h1>
+      <section class="bookList hide">
+        <h3>All awesome books</h3>
+        <div class="big-lists-container"></div>
+      </section>
 
-      <div class="big-lists-container"></div>
-      <div class="border"></div>
-
-      <div class="form">
-        <h2>Add a new book</h2>
+      <section class="addBook form hide">
+        <h3>Add a new book</h3>
         <form>
+          <input type="text" placeholder="Title" required id="title" />
           <input
-            type="text"
-            placeholder="Title"
-            required
-            id="title"
-          /><br /><br />
-          <input
+            class="lastInput"
             type="text"
             placeholder="Author"
             required
             id="author"
-          /><br /><br />
-          <button>Add</button>
+          />
+          <button class="addBtn">Add</button>
         </form>
-      </div>
+      </section>
+      <section class="contact active">
+        <h3>Contact Information</h3>
+        <p>
+          Do you have any questions or you just want to say "Hello"?<br />
+          You can reach out to us!
+        </p>
+        <ul>
+          <li>Our e-mail: mail@mail.com</li>
+          <li>Our phone number: 0044558937890</li>
+          <li>Our address: Streetname 22, 84503 City, Country</li>
+        </ul>
+      </section>
+      <footer>
+        <h3>Copyright ...</h3>
+      </footer>
     </main>
     <script src="index.js"></script>
   </body>
